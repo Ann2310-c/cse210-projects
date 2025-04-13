@@ -1,4 +1,5 @@
 using System;
+//To exceed requirements, I added a count of how many times the activities were performed.
 
 class Program
 {
