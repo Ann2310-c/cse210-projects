@@ -1,9 +1,9 @@
 public class SimpleGoal : Goal{
-    
     private bool _isComplete;
 
     public SimpleGoal(string name, string description, int points)
-        : base(name, description, points){
+        : base(name, description, points)
+    {
         _isComplete = false;
     }
 
@@ -15,11 +15,12 @@ public class SimpleGoal : Goal{
         return _isComplete;
     }
 
-    public override string GetDetailsString(){
-        return $"[{(_isComplete ? "X" : " ")}] {_shortName} ({_description})";
-    }
-
     public override string GetStringRepresentation(){
         return $"SimpleGoal|{_shortName}|{_description}|{_points}|{_isComplete}";
     }
+
+    public override string GetDetailsString(){
+        return $"[{(_isComplete ? "X" : " ")}] {_shortName} ({_description})";
+    }
 }
+

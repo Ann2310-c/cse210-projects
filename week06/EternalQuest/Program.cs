@@ -1,4 +1,5 @@
 using System;
+//Creativity: I add a list of motivational words and randomly chose one.
 
 class Program
 {
